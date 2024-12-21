@@ -44,7 +44,7 @@
         <Key android:codes="106,74" android:keyLabel="j" />
         <Key android:codes="107,75" android:keyLabel="k" />
         <Key android:codes="108,76" android:keyLabel="l" />
-        <Key android:codes="10" android:keyLabel="Enter" android:keyWidth="12%p" />
+        <Key android:codes="10" android:keyLabel="↲" android:keyWidth="12%p" />
     </Row>
 
     <!-- Row 4: Shift, Z to M -->
