@@ -16,6 +16,7 @@
         <Key android:codes="55" android:keyLabel="7" android:keyWidth="12%p" />
         <Key android:codes="56" android:keyLabel="8" android:keyWidth="12%p" />
         <Key android:codes="57" android:keyLabel="9" android:keyWidth="12%p" />
+        <Key android:codes="48" android:keyLabel="0" android:keyWidth="12%p" />
     </Row>
 
     <!-- Row 2: Q to P with Clearing Key -->
