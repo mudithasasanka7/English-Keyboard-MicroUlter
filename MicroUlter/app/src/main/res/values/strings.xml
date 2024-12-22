@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MicroUlter</string>
+    <string-array name="emoji_list">
+        <item>😊</item>
+        <item>😂</item>
+        <item>❤️</item>
+        <item>😍</item>
+        <item>🤔</item>
+        <!-- Add up to 450 emojis -->
+    </string-array>
 </resources>
