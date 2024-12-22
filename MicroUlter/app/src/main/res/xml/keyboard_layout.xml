@@ -63,6 +63,7 @@
 
     <!-- Row 5: @, Space, ., , -->
     <Row>
+        <Key android:codes="1001" android:keyLabel="😀" android:keyWidth="15%p" />
         <Key android:codes="64" android:keyLabel="@" android:keyWidth="12%p" />
         <Key android:codes="32" android:keyLabel="Space" android:keyWidth="50%p" />
         <Key android:codes="46" android:keyLabel="." android:keyWidth="12%p" />
