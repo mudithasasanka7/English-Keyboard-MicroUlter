@@ -85,6 +85,7 @@ public class MicroUlterKeyboard extends InputMethodService implements KeyboardVi
         }
     }
 
+
     @Override public void onPress(int primaryCode) {}
     @Override public void onRelease(int primaryCode) {}
     @Override public void onText(CharSequence text) {}
