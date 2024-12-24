@@ -2,4 +2,5 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="lowercase_background">#2a2738</color> <!-- Your dark theme color -->
 </resources>

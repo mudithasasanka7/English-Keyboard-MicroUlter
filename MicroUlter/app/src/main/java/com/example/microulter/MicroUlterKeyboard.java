@@ -33,11 +33,24 @@ public class MicroUlterKeyboard extends InputMethodService implements KeyboardVi
         InputConnection inputConnection = getCurrentInputConnection();
         if (inputConnection != null) {
             switch (primaryCode) {
+                // Inside onKey method
                 case -1: // Shift key
-                    isShifted = !isShifted;
-                    keyboardView.setShifted(isShifted);
-                    keyboardView.invalidateAllKeys();
+                    isShifted = !isShifted; // Toggle shift state
+                    keyboardView.setShifted(isShifted); // Update keyboard keys
+
+                    // Change Shift key background based on shift state
+                    int shiftKeyIndex = findShiftKeyIndex(); // Get Shift key index
+                    if (shiftKeyIndex != -1) {
+                        Keyboard.Key shiftKey = keyboardView.getKeyboard().getKeys().get(shiftKeyIndex);
+                        if (isShifted) {
+                            shiftKey.icon = getResources().getDrawable(R.drawable.shift_key_active, null);
+                        } else {
+                            shiftKey.icon = getResources().getDrawable(R.drawable.shift_key_inactive, null);
+                        }
+                        keyboardView.invalidateKey(shiftKeyIndex); // Refresh Shift key only
+                    }
                     break;
+
 
                 case -5: // Backspace key
                     CharSequence currentText = inputConnection.getTextBeforeCursor(2, 0);
@@ -83,6 +96,16 @@ public class MicroUlterKeyboard extends InputMethodService implements KeyboardVi
                     }
             }
         }
+    }
+
+    private int findShiftKeyIndex() {
+        for (int i = 0; i < keyboardView.getKeyboard().getKeys().size(); i++) {
+            Keyboard.Key key = keyboardView.getKeyboard().getKeys().get(i);
+            if (key.codes[0] == -1) { // Shift key code
+                return i;
+            }
+        }
+        return -1; // Not found
     }
 
 

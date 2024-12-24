@@ -35,6 +35,7 @@
             </intent-filter>
             <meta-data
                 android:name="android.view.im"
+                android:label="@string/keyboard_name"
                 android:resource="@xml/micro_ulter_keyboard" />
         </service>
 

@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">MicroUlter</string>
+    <string name="keyboard_name">Mu Keyboard</string>
+    <string name="sub_keyboard_name">QWERTY English Keyboard</string>
+
     <string-array name="emoji_list">
         <item>😊</item>
         <item>😂</item>

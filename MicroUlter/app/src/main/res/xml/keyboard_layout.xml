@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     android:keyWidth="9%p"
-    android:keyHeight="60dp"
+    android:keyHeight="50dp"
     android:horizontalGap="1%p"
     android:verticalGap="5dp">
 
@@ -50,7 +50,7 @@
 
     <!-- Row 4: Shift, Z to M -->
     <Row>
-        <Key android:codes="-1" android:keyLabel="↑" android:keyWidth="12%p" />
+        <Key android:codes="-1" android:keyLabel="↑" android:keyWidth="12%p"/>
         <Key android:codes="122,90" android:keyLabel="z" />
         <Key android:codes="120,88" android:keyLabel="x" />
         <Key android:codes="99,67" android:keyLabel="c" />
